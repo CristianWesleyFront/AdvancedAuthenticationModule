@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { SuspensedView } from 'tools/suspense';
+import { SuspensedView } from '../tools/suspense';
 
-import { Dashboard } from 'Pages/Dashboard';
+import { Dashboard } from '../pages/Dashboard';
 
 const PrivateRoutes = () => {
   return (
