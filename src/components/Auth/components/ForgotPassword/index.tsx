@@ -4,7 +4,6 @@ import { Card } from '../shared/Card';
 import { FormContainer } from '../shared/FormContainer';
 import { useNavigate, Link } from 'react-router-dom';
 import { requestPassword } from '../../core/_requests';
-// import { Container } from './styles';
 
 const { Title, Text } = Typography;
 
