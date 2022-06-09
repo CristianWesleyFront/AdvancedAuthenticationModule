@@ -1,38 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  font-family: Poppins, 'sans-serif' !important;
-  background-color: #ffffff;
-  padding: 3.75rem;
-  width: 500px;
-  border-radius: 0.475rem;
-  margin: auto;
-  box-shadow: 0 0.1rem 1rem 0.25rem rgb(0 0 0 / 5%) !important;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  h3.ant-typography {
-    margin: 0px;
-  }
-
-  h5.ant-typography {
-    margin-top: 0.5rem;
-
-    a {
-      margin-left: 5px;
-    }
-  }
-
+export const FormContainer = styled.div`
   form {
     margin-top: 1.5rem;
 
     label {
       width: 100%;
-      font-weight: 500;
-      font-size: 13px;
+      font-weight: 600;
+      font-size: 14px;
       line-height: 20px;
       color: #000000;
       &::before {
@@ -41,7 +16,8 @@ export const Container = styled.div`
     }
 
     input,
-    .ant-input-password {
+    .ant-input-password,
+    .ant-input-affix-wrapper {
       background-color: #f5f8fa;
       border-color: #f5f8fa;
       color: #5e6278;
@@ -57,7 +33,7 @@ export const Container = styled.div`
       .ant-checkbox + span {
         width: 100%;
         font-weight: 500;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 16px;
         color: #5e6278;
       }
@@ -68,21 +44,36 @@ export const Container = styled.div`
       height: 100%;
       min-height: 32px;
       span {
-        color: #ffffff;
-        font-size: 0.8rem;
+        color: #009ef7;
+        font-size: 0.9rem;
         font-weight: 500;
         line-height: 1.5;
         padding: 0.4rem;
       }
 
-      border-color: #009ef7;
-      background-color: #009ef7;
+      background-color: #f1faff;
+      border-color: #f1faff;
+
+      &.ant-btn-primary {
+        span {
+          color: #ffffff;
+        }
+
+        border-color: transparent;
+        background-color: #009cf7ae;
+      }
+
+      transition: filter 0.2s;
+
+      &:hover {
+        border-color: #009cf7ae;
+        filter: brightness(1.1);
+      }
 
       box-shadow: none !important;
       cursor: pointer;
       outline: none !important;
       margin-bottom: 1.25rem !important;
-
       border-radius: 0.625rem;
     }
   }
