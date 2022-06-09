@@ -59,7 +59,7 @@ const Registration: React.FC = () => {
       <Title level={3}>Create an Account</Title>
       <Title level={5}>
         <Text type="secondary">Already have an account?</Text>
-        <Link to="/auth/forgotPassword">Forgot Password ?</Link>
+        <Link to="/auth/forgot-password">Forgot Password ?</Link>
       </Title>
       <FormContainer>
         <Form
